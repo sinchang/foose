@@ -1,5 +1,6 @@
 import Index from '../views/Index.vue'
-import Button from '../../../packages/fo-button/docs/index.md'
+import Button from '../../../packages/button/docs/index.md'
+import Label from '../../../packages/label/docs/index.md'
 
 export default [
   {
@@ -14,6 +15,15 @@ export default [
           title: 'Button'
         },
         component: Button
+      },
+      {
+        name: 'label',
+        path: 'label',
+        meta: {
+          group: 'elements',
+          title: 'Label'
+        },
+        component: Label
       }
     ]
   }

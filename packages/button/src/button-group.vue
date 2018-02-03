@@ -1,6 +1,6 @@
 <template>
   <div :class="{ 'btn-group': true, 'btn-group-block': block }">
-    <slot />
+    <slot/>
   </div>
 </template>
 

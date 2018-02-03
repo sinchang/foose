@@ -1,6 +1,14 @@
 <template>
-  <button :class="['btn', typeClass, sizeClass, blockClass, activeClass, loadingClass, disabledClass]">
-    <slot />
+  <button 
+    :class="{
+      'btn': true, 
+      [`btn-${type}`]: type, 
+      [`btn-${size}`]: size, 
+      'btn-block': block,
+      'active': active, 
+      'loading': loading, 
+      'disabled': disabled }">
+    <slot/>
   </button>
 </template>
 
@@ -37,26 +45,6 @@
         type: Boolean,
         required: false,
         default: false
-      }
-    },
-    computed: {
-      typeClass() {
-        return this.type ? 'btn-' + this.type : ''
-      },
-      sizeClass() {
-        return this.size ? 'btn-' + this.size : ''
-      },
-      blockClass() {
-        return this.block ? 'btn-block' : ''
-      },
-      activeClass() {
-        return this.active ? 'active' : ''
-      },
-      loadingClass() {
-        return this.loading ? 'loading' : ''
-      },
-      disabledClass() {
-        return this.disabled ? 'disabled' : ''
       }
     }
   }
