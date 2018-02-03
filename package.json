@@ -1,0 +1,65 @@
+{
+  "name": "foose-project",
+  "private": true,
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "poi",
+    "build:doc": "poi build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinchang/foose.git"
+  },
+  "keywords": [],
+  "author": "sinchang <sinchangwen@gmail.com> (http://sinchang.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sinchang/foose/issues"
+  },
+  "homepage": "https://github.com/sinchang/foose#readme",
+  "devDependencies": {
+    "@vue/test-utils": "1.0.0-beta.11",
+    "babel-jest": "22.1.0",
+    "bili": "2.2.6",
+    "eslint": "4.17.0",
+    "eslint-plugin-vue": "4.2.2",
+    "jest": "22.1.4",
+    "jest-serializer-vue": "0.3.0",
+    "lerna": "^2.8.0",
+    "less": "2.7.3",
+    "less-loader": "4.0.5",
+    "markdown-to-vue-loader": "0.4.0",
+    "poi": "9.6.13",
+    "vue-jest": "2.0.0"
+  },
+  "dependencies": {
+    "highlight.js": "9.12.0",
+    "normalize.css": "7.0.0",
+    "object-assign": "4.1.1",
+    "promise-polyfill": "7.0.2",
+    "vue-router": "3.0.1"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+    },
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/jest-serializer-vue"
+    ],
+    "mapCoverage": true
+  }
+}

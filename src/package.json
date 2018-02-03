@@ -1,0 +1,23 @@
+{
+  "name": "foose",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "bili index.js --plugin vue"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinchang/foose.git"
+  },
+  "keywords": [],
+  "author": "sinchang <sinchangwen@gmail.com> (http://sinchang.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sinchang/foose/issues"
+  },
+  "homepage": "https://github.com/sinchang/foose#readme",
+  "dependencies": {
+    "spectre.css": "^0.5.0"
+  }
+}
