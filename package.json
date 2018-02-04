@@ -1,9 +1,9 @@
 {
   "name": "foose-project",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "docs/src/index.js",
   "scripts": {
     "dev": "poi",
     "build:doc": "poi build",
