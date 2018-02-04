@@ -8,11 +8,12 @@
     "dev": "poi",
     "build:doc": "poi build",
     "build": "lerna run build",
+    "bootstrap": "lerna bootstrap",
     "test": "jest",
     "lint": "eslint . --ext .js,.vue",
     "lint:fix": "eslint . --ext .js,.vue --fix",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
+    "test:cov": "jest --coverage",
     "precommit": "npm run lint",
     "prepush": "npm run test"
   },
