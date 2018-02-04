@@ -14,12 +14,10 @@
     props: {
       type: {
         type: String,
-        required: false,
         default: ''
       },
       rounded: {
         type: Boolean,
-        required: false,
         default: false
       }
     }

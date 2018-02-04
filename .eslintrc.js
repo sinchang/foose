@@ -4,7 +4,8 @@ module.exports = {
     'plugin:vue/recommended'
   ],
   rules: {
-    'no-console': 0
+    'no-console': 0,
+    'vue/require-prop-types': 0
   },
   env: {
     browser: true,

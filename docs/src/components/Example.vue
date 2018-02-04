@@ -6,7 +6,7 @@
 
 <style lang="less">
   .example {
-    .btn-block, .btn-group {
+    .btn-block, .btn-group, .table {
       margin-bottom: 10px;
     }
   }

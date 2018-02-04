@@ -17,4 +17,8 @@
   .off-canvas {
     padding-top: 60px;
   }
+
+  .docs-content {
+    margin-right: 4rem;
+  }
 </style>

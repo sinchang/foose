@@ -1,24 +1,25 @@
 <template>
-  <i 
-    :class="{
-      'icon': true,
-      [`icon-${type}`]: type,
-      [`icon-${size}`]: size }" />
+  <div>
+    <slot/>
+  </div>
 </template>
 
 <script>
   export default {
-    name: 'FoIcon',
+    name: 'FoTableColumn',
     props: {
-      type: {
+      prop: {
         type: String,
         default: ''
       },
-      size: {
+      label: {
         type: String,
         default: ''
+      },
+      width: {
+        type: Number,
+        default: null
       }
     }
   }
 </script>
-

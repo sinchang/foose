@@ -10,7 +10,6 @@
     props: {
       block: {
         type: Boolean,
-        required: false,
         default: false
       }
     }
