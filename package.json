@@ -7,9 +7,14 @@
   "scripts": {
     "dev": "poi",
     "build:doc": "poi build",
+    "build": "lerna run build",
     "test": "jest",
+    "lint": "eslint . --ext .js,.vue",
+    "lint:fix": "eslint . --ext .js,.vue --fix",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "precommit": "npm run lint",
+    "prepush": "npm run test"
   },
   "repository": {
     "type": "git",
@@ -28,6 +33,7 @@
     "bili": "2.2.6",
     "eslint": "4.17.0",
     "eslint-plugin-vue": "4.2.2",
+    "husky": "0.14.3",
     "jest": "22.1.4",
     "jest-serializer-vue": "0.3.0",
     "lerna": "^2.8.0",
@@ -35,6 +41,7 @@
     "less-loader": "4.0.5",
     "markdown-to-vue-loader": "0.4.0",
     "poi": "9.6.13",
+    "rollup-plugin-vue": "3.0.0",
     "vue-jest": "2.0.0"
   },
   "dependencies": {
