@@ -1,6 +1,7 @@
 import Index from '../views/Index.vue'
 import Button from '../../../packages/button/docs/index.md'
 import Label from '../../../packages/label/docs/index.md'
+import Icon from '../../../packages/icon/docs/index.md'
 
 export default [
   {
@@ -24,6 +25,15 @@ export default [
           title: 'Label'
         },
         component: Label
+      },
+      {
+        name: 'icon',
+        path: 'icon',
+        meta: {
+          group: 'elements',
+          title: 'Icon'
+        },
+        component: Icon
       }
     ]
   }
