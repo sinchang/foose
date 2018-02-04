@@ -19,8 +19,8 @@ jobs:
           paths:
             - ./node_modules
       - run:
-        name: lerna bootstrap
-        command: yarn bootstrap
+          name: lerna bootstrap
+          command: yarn bootstrap
       - run:
           name: test
           command: yarn test:cov
