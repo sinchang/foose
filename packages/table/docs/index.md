@@ -17,6 +17,7 @@
         </template>
       </fo-table-column>
     </fo-table>
+    <fo-table :data="data"></fo-table>
   </div>
 </template>
 

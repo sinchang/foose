@@ -2,10 +2,11 @@ import 'spectre.css'
 import './node_modules/spectre.css/docs/dist/spectre-exp.css'
 import './node_modules/spectre.css/docs/dist/spectre-icons.css'
 
-import FoButton, { Button, ButtonGroup } from '../packages/button/index'
-import FoLabel, { Label } from '../packages/label/index'
-import FoIcon, { Icon } from '../packages/icon/index'
-import FoTable, { Table } from '../packages/table/index'
+import FoButton, { Button, ButtonGroup } from '../packages/button'
+import FoLabel, { Label } from '../packages/label'
+import FoIcon, { Icon } from '../packages/icon'
+import FoTable, { Table, TableColumn } from '../packages/table'
+import FoInput, { Input } from '../packages/input'
 
 export default {
   version: '0.0.1',
@@ -14,11 +15,14 @@ export default {
   Label,
   Icon,
   Table,
+  TableColumn,
+  Input,
   install(Vue) {
     Vue.use(FoButton)
     Vue.use(FoLabel)
     Vue.use(FoIcon)
     Vue.use(FoTable)
+    Vue.use(FoInput)
   }
 }
 
@@ -27,5 +31,7 @@ export {
   ButtonGroup,
   Label,
   Icon,
-  Table
+  Table,
+  TableColumn,
+  Input
 }

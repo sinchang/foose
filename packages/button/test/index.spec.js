@@ -3,10 +3,12 @@ import Button from '../src/Button.vue'
 import ButtonGroup from '../src/ButtonGroup.vue'
 
 describe('Button', () => {
+
+  const createCmp = propsData => shallow(Button, { propsData })
+  let wrapper
+
   it('type', () => {
-    const wrapper = shallow(Button, {
-      propsData: { type: 'primary' }
-    })
+    wrapper = createCmp({ type: 'primary' })
 
     expect(wrapper.classes()).toContain('btn-primary')
   })
@@ -22,25 +24,19 @@ describe('Button', () => {
   })
 
   it('size', () => {
-    const wrapper = shallow(Button, {
-      propsData: { type: 'sm' }
-    })
+    wrapper = createCmp({ size: 'sm' })
 
     expect(wrapper.classes()).toContain('btn-sm')
   })
 
   it('state', () => {
-    const wrapper = shallow(Button, {
-      propsData: { loading: true }
-    })
+    wrapper = createCmp({ loading: true })
 
     expect(wrapper.classes()).toContain('loading')
   })
 
   it('block', () => {
-    const wrapper = shallow(Button, {
-      propsData: { block: true }
-    })
+    wrapper = createCmp({ block: true })
 
     expect(wrapper.classes()).toContain('btn-block')
   })
