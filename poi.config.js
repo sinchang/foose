@@ -19,6 +19,7 @@ module.exports = {
   },
   webpack(config) {
     config.resolve.alias.vue$ = 'vue/dist/vue.js'
+    config.resolve.alias['@'] = path.join(__dirname, 'packages')
     return config
   },
   extendWebpack(config) {

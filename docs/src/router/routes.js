@@ -1,9 +1,9 @@
 import Index from '../views/Index.vue'
-import Button from '../../../packages/button/docs/index.md'
-import Label from '../../../packages/label/docs/index.md'
-import Icon from '../../../packages/icon/docs/index.md'
-import Table from '../../../packages/table/docs/index.md'
-import Input from '../../../packages/input/docs/index.md'
+import Button from '@/button/docs/index.md'
+import Label from '@/label/docs/index.md'
+import Icon from '@/icon/docs/index.md'
+import Table from '@/table/docs/index.md'
+import Input from '@/input/docs/index.md'
 
 export default [
   {

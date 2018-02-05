@@ -2,11 +2,11 @@ import 'spectre.css'
 import './node_modules/spectre.css/docs/dist/spectre-exp.css'
 import './node_modules/spectre.css/docs/dist/spectre-icons.css'
 
-import FoButton, { Button, ButtonGroup } from '../packages/button'
-import FoLabel, { Label } from '../packages/label'
-import FoIcon, { Icon } from '../packages/icon'
-import FoTable, { Table, TableColumn } from '../packages/table'
-import FoInput, { Input } from '../packages/input'
+import FoButton, { Button, ButtonGroup } from '@/button'
+import FoLabel, { Label } from '@/label'
+import FoIcon, { Icon } from '@/icon'
+import FoTable, { Table, TableColumn } from '@/table'
+import FoInput, { Input } from '@/input'
 
 export default {
   version: '0.0.1',
