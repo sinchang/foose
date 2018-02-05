@@ -1,5 +1,5 @@
 import { shallow } from '@vue/test-utils'
-import Icon  from '../src/icon.vue'
+import Icon  from '../src/Icon.vue'
 
 describe('Icon', () => {
   it('type', () => {

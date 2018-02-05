@@ -1,5 +1,5 @@
 import { shallow } from '@vue/test-utils'
-import Label  from '../src/label.vue'
+import Label  from '../src/Label.vue'
 
 describe('Label', () => {
   it('type', () => {

@@ -1,5 +1,5 @@
 import Table from './src/Table.vue'
-import TableColumn from './src/TableColumn.vue'
+import TableColumn from './src/TableColumn.js'
 
 export default {
   Table,

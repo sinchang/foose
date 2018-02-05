@@ -27,7 +27,7 @@
 </template>
 
 <script>
-  import TableColumnHeader from './TableColumnHeader'
+  import TableColumnHeader from './TableColumnHeader.js'
   import TableRow from './TableRow'
 
   export default {
@@ -76,9 +76,7 @@
 
       this.data.forEach((data, index) => {
         data.rowId = index
-        this.rows.push({
-          data
-        })
+        this.rows.push(data)
       })
     }
   }
