@@ -51,7 +51,8 @@
       },
       data: {
         type: Array,
-        required: true
+        required: false,
+        default: () => []
       }
     },
     data() {
@@ -61,23 +62,28 @@
       }
     },
     mounted() {
-      const columnComponents = this.$slots.default
+      if (this.$slots.default) {
+        const columnComponents = this.$slots.default
         .filter(column => column.componentInstance)
         .map(column => column.componentInstance)
 
-      columnComponents.forEach(column => {
-        this.columns.push({
-          label: column.label,
-          width: column.width,
-          prop: column.prop,
-          template: column.$scopedSlots.default
+        columnComponents.forEach(column => {
+          this.columns.push({
+            label: column.label,
+            width: column.width,
+            prop: column.prop,
+            template: column.$scopedSlots.default
+          })
         })
-      })
+      }
+      
 
-      this.data.forEach((data, index) => {
+      this.data && this.data.forEach((data, index) => {
         data.rowId = index
         this.rows.push(data)
       })
+
+      // console.log(this)
     }
   }
 </script>
