@@ -16,23 +16,4 @@ describe('Input', () => {
   })
 
   // TODO Event Test
-
-  describe('Icon', () => {
-    it('normal', () => {
-      cmp = createCmp({ 'iconType': 'check', 'hasIcon': 'right' })
-      expect(cmp.classes()).toContain('has-icon-right')
-      expect(cmp.find('.form-icon').classes()).toContain('icon-check')
-    })
-
-    it('must need hasIcon', () => {
-      cmp = createCmp({ 'iconType': 'check' })
-      expect(cmp.find('.form-icon').exists()).toBe(false)
-    })
-
-    it('loading', () => {
-      cmp = createCmp({ 'hasIcon': 'right', 'loading': true })
-      expect(cmp.classes()).toContain('has-icon-right')
-      expect(cmp.find('.form-icon').classes()).toContain('loading')
-    })
-  })
 })

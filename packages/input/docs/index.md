@@ -1,5 +1,6 @@
 # Input
 
+## Input type
 ```html
 <template>
   <div>
@@ -9,8 +10,6 @@
     <fo-input disabled placeholder="Disabled"></fo-input>
     <fo-input size="sm" placeholder="Small Size"></fo-input>
     <fo-input type="date"></fo-input>
-    <fo-input has-icon="right" icon-type="check" placeholder="Enter"></fo-input>
-    <fo-input has-icon="right" icon-type="check" loading placeholder="Enter"></fo-input>
   </div>
 </template>
 
