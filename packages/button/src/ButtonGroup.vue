@@ -5,14 +5,14 @@
 </template>
 
 <script>
-  export default {
-    name: 'FoBtnGroup',
-    props: {
-      block: {
-        type: Boolean,
-        default: false
-      }
+export default {
+  name: 'FoBtnGroup',
+  props: {
+    block: {
+      type: Boolean,
+      default: false
     }
   }
+}
 </script>
 

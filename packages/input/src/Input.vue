@@ -27,41 +27,41 @@
 </template>
 
 <script>
-  export default {
-    name: 'FoInput',
-    model: {
-      event: 'change'
+export default {
+  name: 'FoInput',
+  model: {
+    event: 'change'
+  },
+  props: {
+    type: {
+      type: String,
+      default: 'text'
     },
-    props: {
-      type: {
-        type: String,
-        default: 'text'
-      },
-      size: {
-        type: String,
-        default: ''
-      },
-      // only left or right
-      hasIcon: {
-        type: String,
-        default: ''
-      },
-      value: {
-        default: null
-      },
-      iconType: {
-        type: String,
-        default: ''
-      },
-      loading: {
-        type: Boolean,
-        default: false
-      }
+    size: {
+      type: String,
+      default: ''
     },
-    methods: {
-      change(event) {
-        this.$emit('change', event.target.value)
-      }
+    // only left or right
+    hasIcon: {
+      type: String,
+      default: ''
+    },
+    value: {
+      default: null
+    },
+    iconType: {
+      type: String,
+      default: ''
+    },
+    loading: {
+      type: Boolean,
+      default: false
+    }
+  },
+  methods: {
+    change(event) {
+      this.$emit('change', event.target.value)
     }
   }
+}
 </script>

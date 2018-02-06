@@ -9,14 +9,14 @@
 </template>
 
 <script>
-  import TableCell from './TableCell'
+import TableCell from './TableCell'
 
-  export default {
-    name: 'TableRow',
-    components: {
-      TableCell
-    },
-    props: ['columns', 'row']
-  }
+export default {
+  name: 'TableRow',
+  components: {
+    TableCell
+  },
+  props: ['columns', 'row']
+}
 </script>
 
