@@ -35,7 +35,7 @@
     props: {
       type: {
         type: String,
-        default: ''
+        default: 'text'
       },
       size: {
         type: String,

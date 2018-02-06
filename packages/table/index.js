@@ -10,7 +10,4 @@ export default {
   }
 }
 
-export { 
-  Table,
-  TableColumn
-}
+export { Table, TableColumn }

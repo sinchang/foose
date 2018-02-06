@@ -7,18 +7,17 @@
 </template>
 
 <script>
-  export default {
-    name: 'FoIcon',
-    props: {
-      type: {
-        type: String,
-        default: ''
-      },
-      size: {
-        type: String,
-        default: ''
-      }
+export default {
+  name: 'FoIcon',
+  props: {
+    type: {
+      type: String,
+      default: ''
+    },
+    size: {
+      type: String,
+      default: ''
     }
   }
+}
 </script>
-

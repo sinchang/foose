@@ -26,12 +26,4 @@ export default {
   }
 }
 
-export {
-  Button,
-  ButtonGroup,
-  Label,
-  Icon,
-  Table,
-  TableColumn,
-  Input
-}
+export { Button, ButtonGroup, Label, Icon, Table, TableColumn, Input }

@@ -9,17 +9,17 @@
 </template>
 
 <script>
-  export default {
-    name: 'FoLabel',
-    props: {
-      type: {
-        type: String,
-        default: ''
-      },
-      rounded: {
-        type: Boolean,
-        default: false
-      }
+export default {
+  name: 'FoLabel',
+  props: {
+    type: {
+      type: String,
+      default: ''
+    },
+    rounded: {
+      type: Boolean,
+      default: false
     }
   }
+}
 </script>
