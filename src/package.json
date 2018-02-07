@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/sinchang/foose#readme",
   "dependencies": {
+    "lodash.isundefined": "^3.0.1",
     "spectre.css": "^0.5.0"
   },
   "peerDependencies": {

@@ -8,6 +8,7 @@ import FoIcon, { Icon } from '@/icon'
 import FoTable, { Table, TableColumn } from '@/table'
 import FoInput, { Input } from '@/input'
 import FoTextarea, { Textarea } from '@/textarea'
+import FoRadio, { Radio } from '@/radio'
 
 export default {
   version: '0.0.1',
@@ -19,6 +20,7 @@ export default {
   TableColumn,
   Input,
   Textarea,
+  Radio,
   install(Vue) {
     Vue.use(FoButton)
     Vue.use(FoLabel)
@@ -26,7 +28,18 @@ export default {
     Vue.use(FoTable)
     Vue.use(FoInput)
     Vue.use(FoTextarea)
+    Vue.use(FoRadio)
   }
 }
 
-export { Button, ButtonGroup, Label, Icon, Table, TableColumn, Input, Textarea }
+export { 
+  Button, 
+  ButtonGroup, 
+  Label, 
+  Icon, 
+  Table, 
+  TableColumn, 
+  Input, 
+  Textarea,
+  Radio
+}

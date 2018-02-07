@@ -5,6 +5,7 @@ import Icon from '@/icon/docs/index.md'
 import Table from '@/table/docs/index.md'
 import Input from '@/input/docs/index.md'
 import Textarea from '@/textarea/docs/index.md'
+import Radio from '@/radio/docs/index.md'
 
 export default [
   {
@@ -64,6 +65,15 @@ export default [
           title: 'Textarea'
         },
         component: Textarea
+      },
+      {
+        name: 'radio',
+        path: 'radio',
+        meta: {
+          group: 'elements',
+          title: 'Radio'
+        },
+        component: Radio
       }
     ]
   }
