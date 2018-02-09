@@ -29,7 +29,7 @@
   "homepage": "https://github.com/sinchang/foose#readme",
   "devDependencies": {
     "@vue/test-utils": "1.0.0-beta.11",
-    "babel-jest": "22.2.0",
+    "babel-jest": "22.2.2",
     "bili": "2.2.6",
     "eslint": "4.17.0",
     "eslint-plugin-prettier": "2.6.0",
