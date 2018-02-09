@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "highlight.js": "9.12.0",
-    "normalize.css": "7.0.0",
+    "normalize.css": "8.0.0",
     "object-assign": "4.1.1",
     "promise-polyfill": "7.1.0",
     "vue": "2.5.13",
