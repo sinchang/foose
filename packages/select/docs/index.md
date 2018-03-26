@@ -5,7 +5,7 @@
   <div>
     {{ value }}
     <fo-select :options="options" v-model="value" @change="handleChange"></fo-select>
-    <fo-select :options="options" disabled></fo-select>
+    <fo-select :options="options" v-model="value" disabled></fo-select>
   </div>
 </template>
 
@@ -13,7 +13,7 @@
 export default {
   data() {
     return {
-      value: '',
+      value: 'twitter',
       options: [
         {
           label: 'twitter',
