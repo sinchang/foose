@@ -1,9 +1,10 @@
-# Textarea 
+# Textarea
 
 ```html
 <template>
   <div>
-    <fo-textarea placeholder="Textarea" :value="value" @change="handleChange"></fo-textarea>
+    <p>{{ value }}</p>
+    <fo-textarea placeholder="Textarea" v-model="value" @change="handleChange"></fo-textarea>
     <fo-textarea placeholder="Textarea" :rows="5"></fo-textarea>
   </div>
 </template>

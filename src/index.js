@@ -9,6 +9,7 @@ import FoTable, { Table, TableColumn } from '@/table'
 import FoInput, { Input } from '@/input'
 import FoTextarea, { Textarea } from '@/textarea'
 import FoRadio, { Radio } from '@/radio'
+import FoSelect, { Select } from '@/select'
 
 export default {
   version: '0.0.1',
@@ -21,6 +22,7 @@ export default {
   Input,
   Textarea,
   Radio,
+  Select,
   install(Vue) {
     Vue.use(FoButton)
     Vue.use(FoLabel)
@@ -29,6 +31,7 @@ export default {
     Vue.use(FoInput)
     Vue.use(FoTextarea)
     Vue.use(FoRadio)
+    Vue.use(FoSelect)
   }
 }
 
@@ -41,5 +44,6 @@ export {
   TableColumn, 
   Input, 
   Textarea,
-  Radio
+  Radio,
+  Select
 }

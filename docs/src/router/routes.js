@@ -6,6 +6,7 @@ import Table from '@/table/docs/index.md'
 import Input from '@/input/docs/index.md'
 import Textarea from '@/textarea/docs/index.md'
 import Radio from '@/radio/docs/index.md'
+import Select from '@/select/docs/index.md'
 
 export default [
   {
@@ -74,6 +75,15 @@ export default [
           title: 'Radio'
         },
         component: Radio
+      },
+      {
+        name: 'select',
+        path: 'select',
+        meta: {
+          group: 'elements',
+          title: 'Select'
+        },
+        component: Select
       }
     ]
   }
