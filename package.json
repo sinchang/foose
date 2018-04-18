@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/sinchang/foose#readme",
   "devDependencies": {
-    "@vue/test-utils": "1.0.0-beta.11",
+    "@vue/test-utils": "^1.0.0-beta.11",
     "babel-jest": "22.2.2",
     "bili": "2.2.6",
     "eslint": "4.17.0",
@@ -50,21 +50,18 @@
     "normalize.css": "^8.0.0",
     "object-assign": "4.1.1",
     "promise-polyfill": "^7.1.0",
-    "vue": "2.5.13",
+    "vue": "^2.5.13",
     "vue-router": "3.0.1"
   },
   "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "json",
-      "vue"
-    ],
+    "moduleFileExtensions": ["js", "json", "vue"],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
     "transform": {
       "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
       ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
     },
-    "snapshotSerializers": [
-      "<rootDir>/node_modules/jest-serializer-vue"
-    ]
+    "snapshotSerializers": ["<rootDir>/node_modules/jest-serializer-vue"]
   }
 }
