@@ -10,6 +10,12 @@
 
 * [Spectre.css](https://picturepan2.github.io/spectre/)
 
+## Inspiration
+
+* [Eks](https://github.com/xkeshi/eks)
+
+* [Element](https://github.com/ElemeFE/element)
+
 ## License
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsinchang%2Ffoose.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsinchang%2Ffoose?ref=badge_large)
